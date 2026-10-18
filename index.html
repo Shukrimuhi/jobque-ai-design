@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="JobQue.ai modern product design concept" />
+  <title>JobQue.ai — Find the right job first</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="JobQue home">
+        <span class="brand-mark">Q</span>
+        <span>JobQue<span class="green">.ai</span></span>
+      </a>
+      <nav>
+        <a class="nav-link active" href="#home" data-page="home"><span>⌂</span> Home</a>
+        <a class="nav-link" href="#dashboard" data-page="dashboard"><span>▦</span> Dashboard</a>
+        <a class="nav-link" href="#profile" data-page="profile"><span>♙</span> Saved profile</a>
+        <a class="nav-link" href="#alerts" data-page="alerts"><span>◉</span> Job alerts <b class="badge">3</b></a>
+        <a class="nav-link" href="#review" data-page="review"><span>✓</span> Review application</a>
+      </nav>
+      <div class="side-card">
+        <div class="extension-icon">↗</div>
+        <strong>JobQue Agent</strong>
+        <p>Autofill applications without repeating yourself.</p>
+        <button class="button button-dark">Get extension</button>
+      </div>
+      <div class="user-mini">
+        <div class="avatar">SM</div>
+        <div><strong>Shukri M.</strong><small>Job seeker</small></div>
+        <button class="icon-button" aria-label="Account settings">⋯</button>
+      </div>
+    </aside>
+
+    <main>
+      <header class="topbar">
+        <button class="menu-button" aria-label="Open menu">☰</button>
+        <div class="mobile-brand">JobQue<span class="green">.ai</span></div>
+        <div class="top-actions">
+          <label class="search"><span>⌕</span><input type="search" placeholder="Search companies or roles" /></label>
+          <button class="icon-button notification" aria-label="Notifications">●</button>
+          <button class="button button-primary" data-go="alerts">+ Track a job</button>
+        </div>
+      </header>
+
+      <section id="home" class="page active-page">
+        <div class="hero">
+          <div class="hero-copy">
+            <span class="eyebrow"><i></i> Your job search, always on</span>
+            <h1>Be first in line for your <span>dream job.</span></h1>
+            <p>JobQue monitors career pages, finds the roles that match you, and alerts you the moment they open.</p>
+            <div class="hero-actions">
+              <button class="button button-primary large" data-go="alerts">Create a job alert →</button>
+              <button class="button button-light large" data-go="dashboard">View dashboard</button>
+            </div>
+            <div class="trust-row"><span>✓ No constant refreshing</span><span>✓ Private profile</span><span>✓ Faster applications</span></div>
+          </div>
+          <div class="hero-visual" aria-label="Example job alert">
+            <div class="glow"></div>
+            <div class="floating-card alert-float"><span class="alert-dot"></span><div><small>New exact match</small><strong>Frontend Developer</strong><em>Posted 6 minutes ago</em></div></div>
+            <div class="dashboard-preview">
+              <div class="preview-head"><span></span><span></span><span></span><b>Today’s matches</b></div>
+              <div class="preview-stat"><small>New opportunities</small><strong>12</strong><span>+4 today</span></div>
+              <div class="preview-job"><i class="company-logo">A</i><div><b>Product Designer</b><small>Atlas · Remote</small></div><span class="match exact">96%</span></div>
+              <div class="preview-job"><i class="company-logo lime">N</i><div><b>Frontend Engineer</b><small>Nova · Phoenix</small></div><span class="match">88%</span></div>
+              <div class="preview-job"><i class="company-logo white">C</i><div><b>UX Researcher</b><small>Canvas · Hybrid</small></div><span class="match">81%</span></div>
+            </div>
+            <div class="floating-card time-float"><b>Save 6+ hrs</b><small>every week</small></div>
+          </div>
+        </div>
+
+        <div class="process-section">
+          <div><span class="eyebrow">HOW IT WORKS</span><h2>Less searching.<br>More applying.</h2></div>
+          <div class="steps">
+            <article><span>01</span><div class="step-icon">⌁</div><h3>Add a company</h3><p>Paste a career-page link and tell us the role you want.</p></article>
+            <article><span>02</span><div class="step-icon">◎</div><h3>We monitor it</h3><p>JobQue checks for new openings based on your schedule.</p></article>
+            <article><span>03</span><div class="step-icon">↗</div><h3>Apply early</h3><p>Get an alert, autofill the form, review, and submit.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="dashboard" class="page">
+        <div class="page-heading"><div><span class="eyebrow">OVERVIEW</span><h2>Good afternoon, Shukri</h2><p>Here’s what changed in your job search today.</p></div><button class="button button-primary" data-go="alerts">+ New tracker</button></div>
+        <div class="stat-grid">
+          <article class="stat-card dark"><span>Jobs found</span><strong>48</strong><small>↑ 12 this week</small></article>
+          <article class="stat-card"><span>Exact matches</span><strong>14</strong><small>29% match rate</small></article>
+          <article class="stat-card"><span>Applications</span><strong>8</strong><small>3 need review</small></article>
+          <article class="stat-card"><span>Active trackers</span><strong>6</strong><small>All running</small></article>
+        </div>
+        <div class="content-grid">
+          <article class="panel wide">
+            <div class="panel-title"><div><h3>Latest matches</h3><p>Jobs found across your tracked companies</p></div><button class="text-button">View all →</button></div>
+            <div class="job-list">
+              <div class="job-row"><i class="company-logo">A</i><div class="job-main"><b>Frontend Developer</b><small>Atlas Labs · Remote · $105k–$130k</small></div><span class="pill green-pill">Exact match</span><small>6 min ago</small><button class="button button-small" data-go="review">Review</button></div>
+              <div class="job-row"><i class="company-logo lime">N</i><div class="job-main"><b>Product Designer</b><small>Nova Systems · Phoenix, AZ</small></div><span class="pill">Partial match</span><small>42 min ago</small><button class="button button-small" data-go="review">Review</button></div>
+              <div class="job-row"><i class="company-logo white">C</i><div class="job-main"><b>UX Researcher</b><small>Canvas Group · Hybrid</small></div><span class="pill green-pill">Exact match</span><small>2 hr ago</small><button class="button button-small" data-go="review">Review</button></div>
+            </div>
+          </article>
+          <article class="panel activity-panel"><div class="panel-title"><div><h3>Tracker activity</h3><p>Last 7 days</p></div></div><div class="chart" aria-label="Tracker activity bar chart"><i style="height:34%"></i><i style="height:52%"></i><i style="height:40%"></i><i style="height:75%"></i><i style="height:58%"></i><i style="height:92%"></i><i style="height:68%"></i></div><div class="chart-labels"><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span>S</span></div></article>
+        </div>
+      </section>
+
+      <section id="profile" class="page">
+        <div class="page-heading"><div><span class="eyebrow">YOUR INFORMATION</span><h2>Saved profile</h2><p>Complete this once and use it on every application.</p></div><button id="save-profile" class="button button-primary">Save changes</button></div>
+        <div class="profile-layout">
+          <aside class="profile-progress"><div class="profile-circle"><span>82%</span><small>complete</small></div><h3>Strong profile</h3><p>Add your portfolio and one more skill to improve autofill.</p><ul><li class="done">Personal details</li><li class="done">Work experience</li><li class="done">Education</li><li>Skills & links</li></ul></aside>
+          <form class="panel profile-form" onsubmit="return false">
+            <div class="form-section"><h3>Personal details</h3><div class="form-grid"><label>First name<input value="Shukri" /></label><label>Last name<input value="Muhidin" /></label><label>Email<input type="email" value="shukri@example.com" /></label><label>Phone<input value="(480) 555-0148" /></label><label class="full">Location<input value="Phoenix, Arizona" /></label></div></div>
+            <div class="form-section"><h3>Job preferences</h3><div class="form-grid"><label>Desired role<input value="Frontend Developer" /></label><label>Work type<select><option>Remote or hybrid</option><option>Remote</option><option>On-site</option></select></label><label>Minimum salary<input value="$75,000" /></label><label>Experience level<select><option>Entry level</option><option>Mid level</option></select></label></div></div>
+          </form>
+        </div>
+      </section>
+
+      <section id="alerts" class="page">
+        <div class="page-heading"><div><span class="eyebrow">MONITORING</span><h2>Job alerts</h2><p>Track the companies and roles that matter to you.</p></div><button id="add-alert" class="button button-primary">+ Add alert</button></div>
+        <div class="alert-summary"><div><span class="pulse"></span><strong>6 trackers are active</strong><p>JobQue last checked all career pages 8 minutes ago.</p></div><button class="button button-light">Check now</button></div>
+        <div id="alert-list" class="alert-list">
+          <article class="tracker-card"><div class="tracker-top"><i class="company-logo">A</i><div><h3>Atlas Labs</h3><a href="#">careers.atlaslabs.com</a></div><label class="switch"><input type="checkbox" checked><span></span></label></div><div class="tracker-details"><div><small>ROLE</small><b>Frontend Developer</b></div><div><small>FREQUENCY</small><b>Every 30 minutes</b></div><div><small>LAST RESULT</small><b class="green">3 matches</b></div></div></article>
+          <article class="tracker-card"><div class="tracker-top"><i class="company-logo lime">N</i><div><h3>Nova Systems</h3><a href="#">jobs.novasystems.com</a></div><label class="switch"><input type="checkbox" checked><span></span></label></div><div class="tracker-details"><div><small>ROLE</small><b>Product Designer</b></div><div><small>FREQUENCY</small><b>Every hour</b></div><div><small>LAST RESULT</small><b class="green">1 match</b></div></div></article>
+          <article class="tracker-card"><div class="tracker-top"><i class="company-logo white">C</i><div><h3>Canvas Group</h3><a href="#">canvasgroup.com/careers</a></div><label class="switch"><input type="checkbox" checked><span></span></label></div><div class="tracker-details"><div><small>ROLE</small><b>UX Researcher</b></div><div><small>FREQUENCY</small><b>Twice daily</b></div><div><small>LAST RESULT</small><b>No new roles</b></div></div></article>
+        </div>
+      </section>
+
+      <section id="review" class="page">
+        <div class="page-heading"><div><span class="eyebrow">FINAL CHECK</span><h2>Review application</h2><p>Confirm your information before you apply.</p></div><span class="pill green-pill">Ready to review</span></div>
+        <div class="review-layout">
+          <div class="panel review-main">
+            <div class="role-banner"><i class="company-logo">A</i><div><h3>Frontend Developer</h3><p>Atlas Labs · Remote · Full time</p></div><span class="match exact">96% match</span></div>
+            <div class="review-section"><div class="section-heading"><h3>Contact information</h3><button class="text-button">Edit</button></div><div class="answer-grid"><div><small>FULL NAME</small><b>Shukri Muhidin</b></div><div><small>EMAIL</small><b>shukri@example.com</b></div><div><small>PHONE</small><b>(480) 555-0148</b></div><div><small>LOCATION</small><b>Phoenix, Arizona</b></div></div></div>
+            <div class="review-section"><div class="section-heading"><h3>Application questions</h3><button class="text-button">Edit answers</button></div><div class="question"><small>Are you authorized to work in the United States?</small><b>Yes</b></div><div class="question"><small>Why are you interested in this position?</small><p>I’m excited to contribute my frontend skills to a team building simple and useful digital experiences.</p></div></div>
+          </div>
+          <aside class="panel checklist"><h3>Application checklist</h3><ul><li class="done">Profile information complete</li><li class="done">Resume attached</li><li class="done">Required questions answered</li><li class="warning">Review AI-written response</li></ul><button id="approve" class="button button-primary large full-button">Approve & continue →</button><p class="privacy-note">JobQue will never submit without your approval.</p></aside>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div id="toast" class="toast" role="status"></div>
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" aria-label="Close">×</button>
+      <span class="eyebrow">NEW TRACKER</span><h2>What job should we watch?</h2><p>Add a career-page link and the role you want.</p>
+      <label>Career page URL<input id="career-url" placeholder="https://company.com/careers" /></label>
+      <label>Job title<input id="job-title" placeholder="e.g. Software Engineer" /></label>
+      <button id="create-tracker" class="button button-primary large full-button">Start monitoring</button>
+    </div>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
