@@ -12,3 +12,25 @@ main{margin-left:246px;min-height:100vh}.topbar{height:78px;position:sticky;top:
 @media(max-width:1050px){.sidebar{width:210px}.sidebar .side-card{display:none}main{margin-left:210px}.hero{grid-template-columns:1fr}.hero-copy{padding:70px 7vw}.hero-visual{min-height:500px}.process-section{grid-template-columns:1fr}.stat-grid{grid-template-columns:1fr 1fr}.content-grid,.review-layout{grid-template-columns:1fr}.alert-list{grid-template-columns:1fr 1fr}}
 @media(max-width:760px){.sidebar{transform:translateX(-100%);transition:.25s;width:260px}.sidebar.open{transform:none}main{margin-left:0}.topbar{height:68px;padding:0 18px;justify-content:space-between}.menu-button,.mobile-brand{display:block}.menu-button{border:0;background:none;font-size:22px}.mobile-brand{font:800 20px Manrope}.search,.notification{display:none}.page{padding:24px 16px 55px}.hero{min-height:auto;border-radius:22px}.hero-copy{padding:52px 24px}.hero h1{font-size:44px}.hero-actions{flex-direction:column}.trust-row{display:grid}.hero-visual{min-height:430px}.dashboard-preview{width:88%;padding:15px}.alert-float{top:5%;left:5%;min-width:200px}.time-float{bottom:6%}.process-section{padding:55px 4px 20px;gap:25px}.process-section h2{font-size:34px}.steps{grid-template-columns:1fr}.page-heading{align-items:flex-start;gap:16px}.page-heading h2{font-size:31px}.page-heading>button{white-space:nowrap}.stat-grid,.alert-list,.profile-layout{grid-template-columns:1fr}.content-grid{display:block}.activity-panel{margin-top:16px}.job-row{align-items:flex-start;flex-wrap:wrap}.job-row .job-main{min-width:65%}.job-row>small{margin-left:51px}.profile-progress{display:none}.form-grid,.answer-grid{grid-template-columns:1fr}.form-grid .full{grid-column:auto}.alert-summary{align-items:flex-start;gap:18px}.tracker-details div{align-items:flex-start}.review-layout{grid-template-columns:1fr}.role-banner{flex-wrap:wrap}.role-banner .match{margin-left:52px}.top-actions .button{padding:10px 12px}}
 @media(max-width:420px){.top-actions .button{font-size:12px}.hero h1{font-size:38px}.hero-visual{min-height:390px}.preview-job:nth-last-child(-n+1){display:none}.page-heading{display:block}.page-heading>button,.page-heading>.pill{margin-top:16px}}
+
+/* Sponsor feedback update: purposeful motion and more personal details */
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid rgba(33,215,119,.38);outline-offset:3px}
+.button{position:relative;overflow:hidden}.button:hover{transform:translateY(-2px)}.button:active{transform:translateY(0) scale(.98)}
+.active-page{animation:page-in .42s cubic-bezier(.2,.8,.2,1)}
+@keyframes page-in{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.alert-dot{animation:soft-pulse 2.4s ease-out infinite}
+@keyframes soft-pulse{0%,55%,100%{box-shadow:0 0 0 6px #dcf9e9}75%{box-shadow:0 0 0 12px rgba(33,215,119,0)}}
+.steps article,.stat-card,.tracker-card{transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+.steps article:hover,.stat-card:hover,.tracker-card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:#ccebd9}
+.focus-card{display:flex;align-items:center;gap:18px;background:linear-gradient(105deg,#101713,#17251c);color:white;border-radius:18px;padding:22px 24px;margin:-10px 0 20px;box-shadow:0 16px 34px rgba(9,24,14,.12)}
+.focus-card .focus-icon{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:var(--green);color:#062413;font-size:22px;font-weight:800;flex:0 0 auto}
+.focus-card>div:nth-child(2){flex:1}.focus-card h3{margin:5px 0 3px}.focus-card p{margin:0;color:#aeb8b1;font-size:14px}.focus-card .button-dark{width:auto;white-space:nowrap}
+.chart i{height:0;transition:height .8s cubic-bezier(.2,.8,.2,1)}
+.tracker-card.just-added{animation:card-in .55s cubic-bezier(.2,.9,.3,1)}
+.tracker-url{color:var(--muted);font-size:12px;overflow-wrap:anywhere}
+@keyframes card-in{from{opacity:0;transform:translateY(-16px) scale(.97)}to{opacity:1;transform:none}}
+.toast{transition:opacity .25s ease,transform .25s ease}
+.modal{opacity:0;transition:opacity .2s ease}.modal.open{opacity:1}.modal-card{animation:modal-in .28s cubic-bezier(.2,.8,.2,1)}
+@keyframes modal-in{from{opacity:0;transform:translateY(16px) scale(.98)}to{opacity:1;transform:none}}
+@media(max-width:760px){.focus-card{align-items:flex-start;flex-wrap:wrap}.focus-card .button-dark{width:100%}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.chart i{transition:none!important}}
